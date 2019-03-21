@@ -11,16 +11,16 @@
     </div>
     <script>
       var dodger = document.getElementById('dodger');
-      document.addEventListener('keydown', 
+      document.addEventListener('keydown', moveDoggerRight );
       
-      var mov(e) {
+      var moveDoggerRight = e => {
         if (e.which === 39) {
           var right = parseInt(dodger.style.right.replace('px', ''), 10)
           if (right > 0) {
             dodger.style.right = `${right - 1}px`
           }
         }
-      })
+      }
     </script>
   </body>
 </html>
