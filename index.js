@@ -6,6 +6,6 @@ var moveDoggerRight = e => {
     var right = parseInt(dodger.style.right.replace('px', ''), 10);
     if (right > 0) dodger.style.right = `${right - 1}px`;
   }
-}
+};
 
 document.addEventListener('keydown', moveDoggerRight );
