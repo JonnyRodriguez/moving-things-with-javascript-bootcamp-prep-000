@@ -11,8 +11,6 @@
     </div>
     <script>
       var dodger = document.getElementById('dodger');
-      document.addEventListener('keydown', moveDoggerRight );
-      
       var moveDoggerRight = e => {
         if (e.which === 39) {
           var right = parseInt(dodger.style.right.replace('px', ''), 10)
@@ -21,6 +19,7 @@
           }
         }
       }
+      document.addEventListener('keydown', moveDoggerRight );
     </script>
   </body>
 </html>
