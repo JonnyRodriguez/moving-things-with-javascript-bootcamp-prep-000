@@ -10,7 +10,13 @@
       <div id="dodger" style="bottom: 0px; left: 180px;"></div>
     </div>
     <script>
-      
+      document.addEventListener('keydown', function(e) {
+        if (e.which === 39) {
+          var right = parseInt(dodger.style.right.replace('px', ''), 10)
+ 
+          dodger.style.right = `${right - 1}px`
+        }
+      })
     </script>
   </body>
 </html>
